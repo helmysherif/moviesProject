@@ -1,0 +1,118 @@
+body
+{
+    background-color: #343a40;
+    font-family: "segoe ui light";
+} 
+.search input
+{
+    border-radius: 0 ;
+    border:0 ;
+    border-bottom: 2px solid #fff ;
+    background: transparent ;
+    color:#fff ;
+    font-size: 20px ;
+}
+.search input:focus
+{
+    background: transparent;
+    box-shadow: none ;
+    outline: none ;
+    color:#fff;
+}
+.search input::placeholder
+{
+    font-size: 20px;
+    font-weight: bold;
+    color:#fff ;
+    background: transparent;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.movie
+{
+    overflow: hidden;
+}
+.overlay
+{
+    background: rgba(255,255,255,.4);
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    text-align: center;
+    padding:25px;
+    transform: scale(0);
+    transition: .4s;
+}
+.movie:hover .overlay
+{
+    transform: scale(1);
+}
+.movie img 
+{
+    height: 525px;
+}
+#paginations
+{
+    display: contents;
+}
+#paginations li.active
+{
+    background-color: #ccc;
+}
+#sideMenu
+{
+    width:250px;
+    position:fixed;
+    top:0;
+    left:-188px;
+    height:100vh;
+    background: #fff;
+    z-index: 100;
+    overflow: hidden;
+    
+}
+#sideMenu .leftSide
+{
+    width:75%;
+    background: #343a40;
+    height:100%;
+    float: left;
+}
+#sideMenu .rightSide
+{
+    width:25%;
+    height:100vh;
+    float: right;
+    text-align: center;
+    position: relative;
+}
+#sideMenu .rightSide i
+{
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    transition: .4s;
+    transform: translateY(-50%);
+}
+.leftSide ul
+{
+    list-style: none;
+    margin:0;
+    padding:0;
+    padding:30px;
+    height:70%;
+    overflow: hidden;
+}
+.leftSide ul li
+{
+    color:#fff;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight:600;
+    padding-top:500px;
+    cursor: pointer;
+}

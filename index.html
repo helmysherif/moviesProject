@@ -1,0 +1,51 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id = "sideMenu">
+        <div class="leftSide">
+            <ul>
+                <li movieTitle = "now_playing" class = "item0">now playing</li>
+                <li movieTitle = "popular" class = "item1">popular</li>
+                <li movieTitle = "top_rated" class = "item2">top rated</li>
+                <li movieTitle = "upcoming" class = "item3">upcoming</li>
+                <li movieTitle = "latest" class = "item4">latest</li>
+                <li movieTitle = "contact_us" class = "item5">contact us</li>
+            </ul>
+        </div>
+        <div class="rightSide">
+            <div class = "d-flex justify-content-center align-items-center">
+                <i id = "close" class="fas fa-bars"></i>
+            </div>
+        </div>
+    </section>
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="search">
+                    <input type="text" class = 'form-control' placeholder = "Search by Word" id = "search2">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="search">
+                    <input type="text" class = 'form-control' placeholder = "Search..." id = "search">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-4">
+        <div class="row" id = "moviesRow"></div>
+        <div class="row py-4">
+            <ul class="pagination" id = "paginations"></ul>
+        </div>
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/pagination.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
